@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+	<a class="navbar-brand" href="/">
+		<h2 class="green-text">BaseBall<span class="text-light">Event</span></h2>
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+		aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarNav">
+		<ul class="navbar-nav mr-auto">
+		</ul>
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a class="nav-link" routerLink="addVenue" routerLinkActice="active">
+					<h5 class="text-light">Venues</h5><span class="sr-only"></span>
+				</a>
+			</li>
+            <li class="nav-item">
+				<a class="nav-link" routerLink="addTeam" routerLinkActice="active">
+					<h5 class="text-light">Teams</h5><span class="sr-only"></span>
+				</a>
+			</li>
+            <li class="nav-item">
+				<a class="nav-link" routerLink="#" routerLinkActice="active">
+					<h5 class="text-light">Reference</h5><span class="sr-only"></span>
+				</a>
+			</li>
+			
+			
+			<li class="nav-item">
+				<a class="nav-link" routerLink="home" routerLinkActice="active">
+					<h5 class="text-light">viewvenue</h5><span class="sr-only"></span>
+				</a>
+			</li>
+		
+		</ul>
+	</div>
+</nav>
+<router-outlet></router-outlet>
+

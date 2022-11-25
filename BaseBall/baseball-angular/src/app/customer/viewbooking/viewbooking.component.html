@@ -1,0 +1,22 @@
+<h2>View Booking</h2>
+<div class="col-md-10 offset-md-1">
+
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            <th>Venue Name</th>
+            <th>Event Name</th>
+            <th>Time</th>
+            <th>Date</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let event of events">
+        <td>{{event.venueName}}</td>
+        <td>{{event.eventName}}</td>
+        <td>{{event.eventTime}}</td>
+        <td>{{event.eventDate}}</td>
+        <td><button (click)="updateEvent(event.eventId)" class="btn btn-info">edit</button></td>
+        <td><button (click)="deleteEvent(event.eventId)" class="btn btn-danger">delete</button></td>
+    </tbody ></table></div>

@@ -1,0 +1,24 @@
+<h2>venue list</h2>
+<div class="col-md-10 offset-md-1">
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            
+            <th>name</th>
+            <th>capacity</th>
+            <th>imageurl</th>
+            <th>description</th>
+            <th>location</th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let venue of venues">
+        
+        <td>{{venue.venueName}}</td>
+        <td>{{venue.venueCapacity}}</td>
+        <td>{{venue.venueImageUrl}}</td>
+        <td>{{venue.venueDescription}}</td>
+        <td>{{venue.venueLocation}}</td>
+    </tbody >
+
+</table>
+</div>

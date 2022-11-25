@@ -1,0 +1,41 @@
+
+<h2>venue list</h2>
+<div class="col-md-10 offset-md-1">
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+            
+            <th>name</th>
+            <th>capacity</th>
+            <th>imageurl</th>
+            <th>description</th>
+            <th>location</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody *ngFor="let venue of venues">
+        
+        <td>{{venue.venueName}}</td>
+        <td>{{venue.venueCapacity}}</td>
+        <td>{{venue.venueImageUrl}}</td>
+        <td>{{venue.venueDescription}}</td>
+        <td>{{venue.venueLocation}}</td>
+        <td><button (click)="updateVenue(venue.venueId)" class="btn btn-info">edit</button></td>
+        <td><button (click)="deleteVenue(venue.venueId)" class="btn btn-danger">delete</button></td>
+    </tbody >
+
+</table>
+</div>
+
+<!--<div *ngFor="let venue of venues">
+    <div class="card">
+        <img  *ngFor="let img of venue.venueImageUrl"  [src]="img.ImagePath" class="card-img-top" alt="...">
+        
+        <div class="card-body">
+          <h5 class="card-title">{{venue.venueName}}</h5>
+          <p class="card-text">{{venue.venueDescription}}</p>
+        </div>
+      </div>
+
+</div>-->

@@ -1,0 +1,35 @@
+<h2>Book Venue</h2>
+<div class="col-md-6 offset-md-3">
+  
+<form (ngSubmit)="onSubmit()">
+     <div class="form-row">
+        <div class="form-group col-md-6">
+          <label >Venue Name</label>
+          <input type="text" class="form-control" id="editVenueName" [(ngModel)]="venue.venueName" name="name" placeholder="Enter Venue Name">
+        </div>
+        <div class="form-group col-md-6">
+          <label >Capacity</label>
+          <input type="text" class="form-control" id="venueAddress" [(ngModel)]="venue.venueCapacity" name="capacity" placeholder="Enter the capacity of venue">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <label for="inputPassword4">Location</label>
+          <input type="text" class="form-control" id="editDate" [(ngModel)]="venue.venueLocation" name="location" placeholder="Enter Venue Location">
+        </div>
+
+        <div class="form-group col-md-6">
+          <label for="img">Select image:</label>
+          <input type="file" id="img" name="img" [(ngModel)]="venue.venueImageUrl" name="url" accept="image/*">
+        </div>
+
+        
+      </div>
+      <div class="form-row">
+          <div class="form-group">
+            <label >Description</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="venue.venueDescription" name="description" placeholder="Enter Venue description"></textarea>
+          </div>
+      </div>
+      <button class="btn btn-success" type="submit">submit</button>
+</form></div>
